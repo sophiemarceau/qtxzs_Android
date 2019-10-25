@@ -1,0 +1,60 @@
+package com.wecoo.qutianxia.requestjson;
+
+import android.content.Context;
+
+import com.alibaba.fastjson.JSONObject;
+import com.wecoo.qutianxia.base.BaseRequest;
+import com.wecoo.qutianxia.models.ContactEntity;
+import com.wecoo.qutianxia.requestset.CallServer;
+import com.wecoo.qutianxia.requestset.CallServerInterface;
+import com.yolanda.nohttp.rest.Response;
+
+/**
+ * 获取我的人脉收益总额
+ **/
+
+public class GetContProfitSumRequest extends BaseRequest {
+
+    public GetContProfitSumRequest() {
+        super(WebUrl.getMyContributionSumByLevelAndKind);
+    }
+
+    // 设置请求的参数
+    public void setRequestParms(ProfitSumParms parms) {
+        request.add("_sil_level", parms._sil_level);
+        request.add("_sal_partner_income_kind", parms._sal_partner_income_kind);
+        request.add("_sal_createdtime", parms._sal_createdtime);
+    }
+
+    // 返回数据的回掉
+    public void setReturnDataClick(final Context context, int what, final ReturnDataClick dataClick) {
+        CallServer.getInstance().add(context, false, what, request, new CallServerInterface<String>() {
+            @Override
+            public void onRequestSucceed(int what, String SucceedData) {
+                if (SucceedData != null) {
+                    try {
+                        JSONObject jsonObject = JSONObject.parseObject(SucceedData);
+                        String resultSum = jsonObject.getString(getresult);
+                        dataClick.onReturnData(what, resultSum);
+                    } catch (Exception ex) {
+                        ex.printStackTrace();
+                    }
+                }
+            }
+
+            @Override
+            public void onRequestFailed(int what, Response<String> FailedData) {
+
+            }
+        });
+    }
+
+    public static class ProfitSumParms {
+        // 人脉  (1, "一级人脉"), (2, "二级人脉"), (3, "三级人脉");
+        public String _sil_level;
+        // 类型  (1, "报备通过"), (2, "签约成功"), (3, "奖励活动");
+        public String _sal_partner_income_kind;
+        // 时间  ("1", "近7天"), ("2", "近1个月"), ("3", "近3个月");
+        public String _sal_createdtime;
+    }
+}

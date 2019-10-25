@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/creenType_item_txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_40dp"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/size_15sp"
+        android:textColor="@color/wecoo_gray5"
+        android:paddingLeft="@dimen/padding_15dp" />
+
+    <com.wecoo.qutianxia.widget.MyGridView
+        android:id="@+id/creenType_item_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="5dp"
+        android:numColumns="4"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+</LinearLayout>

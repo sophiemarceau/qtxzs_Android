@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:background="@color/blank_alpha_20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_20dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_50dp"
+            android:orientation="horizontal"
+            android:background="@color/wecoo_gray1">
+            <TextView
+                android:id="@+id/item_action_txtCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/cancel"
+                android:textSize="@dimen/size_16sp"
+                android:textColor="@color/wecoo_gray5"/>
+            <TextView
+                android:id="@+id/item_action_txtSure"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="20dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="@string/sure"
+                android:textSize="@dimen/size_16sp"
+                android:textColor="@color/wecoo_theme_color"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_150dp"
+            android:background="@color/white">
+            <NumberPicker
+                android:id="@+id/item_action_picker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/wecoo_gray2"
+                android:background="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

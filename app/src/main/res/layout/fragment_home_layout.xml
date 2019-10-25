@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.wecoo.qutianxia.view.refreshload.PtrWecooFrameLayout
+        android:id="@+id/home_PtrFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/home_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:divider="@color/wecoo_gray1"
+            android:dividerHeight="10dp" />
+    </com.wecoo.qutianxia.view.refreshload.PtrWecooFrameLayout>
+
+    <com.wecoo.qutianxia.widget.LoadDataErrorWidget
+        android:id="@+id/home_LoadDataError"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/top_View"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_49dp"
+        android:background="@color/transparent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_textView_center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/empty"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_18sp" />
+    </LinearLayout>
+
+</FrameLayout>

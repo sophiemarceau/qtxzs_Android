@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/loaddata_error_nocontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="visible">
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/loaddata_iv_nodata"
+            android:layout_width="98dp"
+            android:layout_height="59dp"
+            android:visibility="visible"
+            android:src="@mipmap/icon_no_content" />
+        <TextView
+            android:id="@+id/loaddata_tv_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/size_15sp"
+            android:textColor="@color/wecoo_gray5"
+            android:text="@string/load_data_nocontent"
+            android:gravity="center"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:id="@+id/BackStageLogin_ll_viewCustomService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_50dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拨打客服电话："
+                android:textColor="@color/wecoo_gray4"
+                android:textSize="@dimen/size_13sp" />
+            <TextView
+                android:id="@+id/BackStageLogin_txt_CustomServices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="400-900-1135"
+                android:textColor="@color/wecoo_theme_color"
+                android:textSize="@dimen/size_13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loaddata_error_nonetwork"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="98dp"
+            android:layout_height="59dp"
+            android:src="@mipmap/icon_wifierror" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:textSize="@dimen/size_16sp"
+            android:textColor="@color/wecoo_gray5"
+            android:text="@string/load_data_nonetwork"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:textSize="@dimen/size_15sp"
+            android:textColor="@color/wecoo_gray5"
+            android:text="@string/load_data_network_set"/>
+    </LinearLayout>
+</FrameLayout>

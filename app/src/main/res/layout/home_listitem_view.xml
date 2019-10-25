@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/homeList_item_imgIcon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_134dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_picture_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50dp"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/homeList_item_txtName"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/empty"
+            android:textColor="@color/wecoo_gray6"
+            android:textSize="@dimen/size_16sp" />
+
+        <TextView
+            android:layout_width="@dimen/view_1dp"
+            android:layout_height="@dimen/view_40dp"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:background="@color/wecoo_gray1" />
+
+        <LinearLayout
+            android:layout_width="@dimen/view_100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right">
+
+            <TextView
+                android:id="@+id/homeList_item_txtStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:text=""
+                android:textColor="@color/wecoo_gray5"
+                android:textSize="@dimen/size_13sp" />
+
+            <TextView
+                android:id="@+id/homeList_item_txtNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/number"
+                android:textColor="@color/wecoo_theme_color"
+                android:textSize="@dimen/size_13sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/yuan"
+                android:textColor="@color/wecoo_gray5"
+                android:textSize="@dimen/size_13sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/view_10dp"-->
+    <!--android:background="@color/wecoo_gray2"/>-->
+</LinearLayout>

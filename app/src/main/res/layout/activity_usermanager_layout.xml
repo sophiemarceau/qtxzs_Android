@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wecoo_gray1"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_View"
+        layout="@layout/titlebar_layout" />
+
+    <LinearLayout style="@style/usermanager_layout_style">
+
+        <TextView
+            android:layout_width="@dimen/view_80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/user_photo"
+            android:textColor="@color/wecoo_gray6"
+            android:textSize="@dimen/size_16sp" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/usermanager_img_photo"
+            android:layout_width="@dimen/view_50dp"
+            android:layout_height="@dimen/view_50dp"
+            android:src="@drawable/default_photo" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/usermanager_layout_style">
+
+        <TextView
+            android:layout_width="@dimen/view_80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/user_nickname"
+            android:textColor="@color/wecoo_gray6"
+            android:textSize="@dimen/size_16sp" />
+
+        <EditText
+            android:id="@+id/usermanager_edit_nickname"
+            style="@style/usermanager_edit_style"
+            android:hint="请输入昵称"
+            android:maxLength="10"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/usermanager_layout_style">
+
+        <TextView
+            android:layout_width="@dimen/view_80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/user_company"
+            android:textColor="@color/wecoo_gray6"
+            android:textSize="@dimen/size_16sp" />
+
+        <EditText
+            android:id="@+id/usermanager_edit_company"
+            style="@style/usermanager_edit_style"
+            android:hint="请输入公司"
+            android:maxLength="20" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/usermanager_layout_style">
+
+        <TextView
+            android:layout_width="@dimen/view_80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/user_job"
+            android:textColor="@color/wecoo_gray6"
+            android:textSize="@dimen/size_16sp" />
+
+        <EditText
+            android:id="@+id/usermanager_edit_job"
+            style="@style/usermanager_edit_style"
+            android:hint="请输入职位"
+            android:maxLength="20"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/usermanager_btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_20dp"
+        android:background="@drawable/login_btn_onclick_bg"
+        android:text="@string/save"
+        android:textColor="@color/login_btn_color_bg"
+        android:textSize="@dimen/size_17sp" />
+</LinearLayout>

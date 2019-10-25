@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_View"
+        layout="@layout/titlebar_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.wecoo.qutianxia.view.refreshload.PtrWecooFrameLayout
+            android:id="@+id/ContactDetail_PtrFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/ContactDetail_listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/wecoo_gray1"
+                android:dividerHeight="1dp"/>
+        </com.wecoo.qutianxia.view.refreshload.PtrWecooFrameLayout>
+
+        <com.wecoo.qutianxia.widget.LoadDataErrorWidget
+            android:id="@+id/ContactDetail_loaddataView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

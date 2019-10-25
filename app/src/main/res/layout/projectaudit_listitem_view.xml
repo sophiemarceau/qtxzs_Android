@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_10dp"
+        android:background="@color/wecoo_gray1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linear_line_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_15dp">
+
+        <TextView
+            android:id="@+id/projectAudit_item_txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/empty"
+            android:textColor="@color/wecoo_theme_color"
+            android:textSize="@dimen/size_15sp" />
+
+        <TextView
+            android:id="@+id/projectAudit_item_txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_3dp"
+            android:text="@string/empty"
+            android:textColor="@color/wecoo_gray4"
+            android:textSize="@dimen/size_12sp" />
+
+        <TextView
+            android:id="@+id/projectAudit_item_txtDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:text="@string/empty"
+            android:textColor="@color/wecoo_gray6"
+            android:textSize="@dimen/size_15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/projectAudit_ll_viewItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_60dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp">
+
+        <LinearLayout
+            android:id="@+id/projectAudit_item_ViewChatLog"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/projectAudit_item_tvChatLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/padding_5dp"
+                android:drawableTop="@mipmap/icon_enterprise_review_chat_log"
+                android:gravity="center"
+                android:text="跟进记录"
+                android:textColor="@color/wecoo_gray6"
+                android:textSize="@dimen/size_11sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/item_fengexian_view"
+            android:layout_width="0.5dp"
+            android:layout_height="30dp"
+            android:background="#FFE8E8E8"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/projectAudit_item_ViewReviewPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/projectAudit_item_tvReviewPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/padding_5dp"
+                android:drawableTop="@mipmap/icon_enterprise_review_phone"
+                android:gravity="center"
+                android:text="拨打电话"
+                android:textColor="@color/wecoo_gray6"
+                android:textSize="@dimen/size_11sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/projectAudit_item_txtReturned"
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:background="@drawable/btn_save_info_bg"
+            android:gravity="center"
+            android:text="退回"
+            android:textColor="@color/wecoo_theme_color"
+            android:textSize="@dimen/size_14sp" />
+
+        <TextView
+            android:id="@+id/projectAudit_item_txtSure"
+            android:layout_width="@dimen/view_100dp"
+            android:layout_height="38dp"
+            android:background="@drawable/btn_commit_info_bg"
+            android:gravity="center"
+            android:text="确认签约"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_14sp" />
+    </LinearLayout>
+</LinearLayout>

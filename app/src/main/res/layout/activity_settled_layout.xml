@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_View"
+        layout="@layout/titlebar_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/settled_ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/view_50dp"
+                android:paddingTop="@dimen/margin_15dp">
+                <!--             基本信息                    -->
+                <LinearLayout style="@style/custominfo_layout_style">
+
+                    <TextView
+                        style="@style/custominfo_text_style"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical|left"
+                        android:text="当前手机号" />
+
+                    <TextView
+                        android:id="@+id/Settled_txt_UserTel"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_54dp"
+                        android:background="@color/white"
+                        android:textColor="@color/wecoo_gray6"
+                        android:textSize="@dimen/size_16sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:maxLength="11"/>
+                </LinearLayout>
+
+                <LinearLayout style="@style/custominfo_layout_style">
+
+                    <TextView
+                        style="@style/custominfo_text_style"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical|left"
+                        android:text="您的姓名" />
+
+                    <EditText
+                        android:id="@+id/Settled_edit_Name"
+                        style="@style/custominfo_text_style"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:hint="请填写您的姓名"
+                        android:inputType="textPersonName"
+                        android:maxLength="15"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/custominfo_layout_style">
+
+                    <TextView
+                        style="@style/custominfo_text_style"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical|left"
+                        android:text="登录用户名" />
+
+                    <EditText
+                        android:id="@+id/Settled_edit_LoginName"
+                        style="@style/custominfo_text_style"
+                        android:layout_weight="1"
+                        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:gravity="center_vertical|right"
+                        android:hint="请填写登录用户名"
+                        android:maxLength="16"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/custominfo_layout_style">
+
+                    <TextView
+                        style="@style/custominfo_text_style"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical|left"
+                        android:text="登录密码" />
+
+                    <EditText
+                        android:id="@+id/Settled_edit_LoginPsw"
+                        style="@style/custominfo_text_style"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:hint="请填写登录密码"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:textCursorDrawable="@null" />
+
+                    <ImageView
+                        android:id="@+id/Settled_img_LoginPsw"
+                        android:layout_width="32dp"
+                        android:layout_height="37dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingBottom="@dimen/padding_10dp"
+                        android:paddingLeft="@dimen/padding_15dp"
+                        android:paddingTop="@dimen/padding_10dp"
+                        android:src="@mipmap/btn_enterprise_review_hidden_password"
+                        android:visibility="gone" />
+                </LinearLayout>
+                <!--             企业信息                    -->
+                <LinearLayout
+                    style="@style/custominfo_layout_style"
+                    android:layout_marginTop="@dimen/margin_10dp">
+
+                    <TextView
+                        style="@style/custominfo_text_style"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical|left"
+                        android:text="企业名称" />
+
+                    <EditText
+                        android:id="@+id/Settled_edit_BusinesName"
+                        style="@style/custominfo_text_style"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:hint="请填写企业名称"
+                        android:maxLength="15"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/custominfo_layout_style">
+
+                    <TextView
+                        style="@style/custominfo_text_style"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical|left"
+                        android:text="企业地区" />
+
+                    <TextView
+                        android:id="@+id/Settled_txt_Adress"
+                        style="@style/custominfo_text_style"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:hint="请选择企业所在地" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/custominfo_layout_style">
+
+                    <TextView
+                        style="@style/custominfo_text_style"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical|left"
+                        android:text="所属行业" />
+
+                    <TextView
+                        android:id="@+id/Settled_txt_Industry"
+                        style="@style/custominfo_text_style"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:hint="请选择企业所属行业" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/custominfo_layout_style">
+
+                    <TextView
+                        style="@style/custominfo_text_style"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical|left"
+                        android:text="企业联系人" />
+
+                    <EditText
+                        android:id="@+id/Settled_edit_BusinesPersion"
+                        style="@style/custominfo_text_style"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:hint="仅用于必要时的沟通"
+                        android:inputType="textPersonName"
+                        android:maxLength="15"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/custominfo_layout_style">
+
+                    <TextView
+                        style="@style/custominfo_text_style"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical|left"
+                        android:text="联系人手机号" />
+
+                    <EditText
+                        android:id="@+id/Settled_edit_PersionTel"
+                        style="@style/custominfo_text_style"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:hint="请输入手机号"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/Settled_edit_BusinesDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:background="@color/white"
+                    android:gravity="top"
+                    android:hint="请填写企业简介，20字以内"
+                    android:maxLength="20"
+                    android:padding="@dimen/padding_15dp"
+                    android:textColor="@color/wecoo_gray6"
+                    android:textColorHint="@color/wecoo_gray4"
+                    android:textSize="@dimen/size_16sp"
+                    android:textCursorDrawable="@null" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="268dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="请上传营业执照"
+                        android:textColor="@color/wecoo_gray6"
+                        android:textSize="@dimen/size_16sp" />
+
+                    <FrameLayout
+                        android:id="@+id/Settled_fl_BusinessLicense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        android:background="@drawable/updownimg_strokeline_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:layout_marginBottom="@dimen/margin_20dp"
+                            android:text="上传营业执照"
+                            android:textColor="@color/wecoo_gray4"
+                            android:textSize="@dimen/size_18sp" />
+
+                        <ImageView
+                            android:id="@+id/Settled_img_BusinessLicense"
+                            android:layout_width="345dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/icon_uploadsfz" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="291dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="请上传个人名片"
+                        android:textColor="@color/wecoo_gray6"
+                        android:textSize="@dimen/size_16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="与营业执照至少选其一"
+                        android:textColor="@color/wecoo_gray4"
+                        android:textSize="@dimen/size_13sp" />
+
+                    <FrameLayout
+                        android:id="@+id/Settled_fl_BusinessCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        android:background="@drawable/updownimg_strokeline_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:layout_marginBottom="@dimen/margin_20dp"
+                            android:text="上传个人名片"
+                            android:textColor="@color/wecoo_gray4"
+                            android:textSize="@dimen/size_18sp" />
+
+                        <ImageView
+                            android:id="@+id/Settled_img_BusinessCard"
+                            android:layout_width="345dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/icon_uploadsfz" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/Settled_butn_commit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_49dp"
+            android:layout_gravity="bottom"
+            android:background="@color/wecoo_theme_color"
+            android:text="@string/commit_sure"
+            android:textColor="@color/wecoo_gray1"
+            android:textSize="@dimen/size_17sp" />
+    </FrameLayout>
+
+
+</LinearLayout>

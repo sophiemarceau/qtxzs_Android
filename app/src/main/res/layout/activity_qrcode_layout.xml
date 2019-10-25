@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_View"
+        layout="@layout/titlebar_layout" />
+
+    <LinearLayout
+        android:id="@+id/qrCode_ll_shotView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/user_image_DefaultPic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_125dp"
+            android:scaleType="centerCrop"
+            android:src="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin_15dp"
+            android:background="@drawable/photo_circular_bg">
+
+            <ImageView
+                android:id="@+id/user_image_Photo"
+                android:layout_width="@dimen/view_60dp"
+                android:layout_height="@dimen/view_60dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_photo" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/user_txt_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/empty"
+            android:textColor="@color/wecoo_gray6"
+            android:textSize="@dimen/size_16sp" />
+
+        <ImageView
+            android:id="@+id/qrCode_image_qr"
+            android:layout_width="@dimen/view_200dp"
+            android:layout_height="@dimen/view_200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:src="@mipmap/share_friend_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/qrcode_content"
+            android:textColor="@color/wecoo_gray5" />
+    </LinearLayout>
+
+</LinearLayout>

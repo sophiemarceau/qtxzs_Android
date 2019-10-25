@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wecoo_gray1"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_View"
+        layout="@layout/titlebar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/custominfo_layout_style"
+                android:paddingRight="@dimen/padding_5dp">
+
+                <TextView
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/payee_name" />
+
+                <EditText
+                    android:id="@+id/withdrawals_edit_name"
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/payee_name"
+                    android:maxLines="1"
+                    android:textCursorDrawable="@null" />
+
+                <ImageView
+                    android:id="@+id/withdrawals_img_Prompt"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:padding="@dimen/padding_10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_invitation_no" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/custominfo_layout_style">
+
+                <TextView
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/payee_bank" />
+
+                <TextView
+                    android:id="@+id/withdrawals_txt_bank"
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:hint="请选择收款人银行" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/custominfo_layout_style">
+
+                <TextView
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/payee_bankAdress" />
+
+                <TextView
+                    android:id="@+id/withdrawals_txt_bankAdress"
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:hint="请选择开户行地区" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/custominfo_layout_style">
+
+                <TextView
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/bank_name" />
+
+                <EditText
+                    android:id="@+id/withdrawals_edit_bankName"
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入开户行名称"
+                    android:maxLines="1"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/custominfo_layout_style">
+
+                <TextView
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/bank_card" />
+
+                <EditText
+                    android:id="@+id/withdrawals_edit_bankCard"
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入银行卡号"
+                    android:inputType="number"
+                    android:maxLength="24"
+                    android:maxLines="1"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/custominfo_layout_style">
+
+                <TextView
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/withdrawals_money" />
+
+                <EditText
+                    android:id="@+id/withdrawals_edit_moneyNum"
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入提现金额"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/custominfo_layout_style">
+
+                <TextView
+                    style="@style/custominfo_text_style"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="当前绑定手机号为: "
+                    android:textColor="@color/wecoo_gray4" />
+                <TextView
+                    android:id="@+id/withdrawals_text_tel"
+                    style="@style/custominfo_text_style"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/wecoo_theme_color" />
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_50dp"
+                android:background="@drawable/linear_line_bg"
+                android:paddingLeft="@dimen/padding_10dp"
+                android:paddingRight="@dimen/padding_15dp">
+
+                <EditText
+                    android:id="@+id/withdrawals_edit_code"
+                    style="@style/login_edit_style"
+                    android:hint="输入验证码"
+                    android:maxLength="10" />
+
+                <Button
+                    android:id="@+id/withdrawals_btn_sendCode"
+                    android:layout_width="@dimen/view_110dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/sendcode_btn_onclick_bg"
+                    android:text="@string/sendcode"
+                    android:textColor="@color/wecoo_theme_color" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/withdrawls_btn_commit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_20dp"
+                android:background="@drawable/login_btn_onclick_bg"
+                android:text="@string/apply_sure"
+                android:textColor="@color/login_btn_color_bg"
+                android:textSize="@dimen/size_17sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

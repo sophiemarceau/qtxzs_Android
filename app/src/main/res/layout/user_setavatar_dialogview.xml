@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/selectPhoto_linear_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/setAvatar_viewClose"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/setAvatar_viewBackGround"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/setAvatar_txt_takephoto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_50dp"
+                android:background="@drawable/aleart_bg_top"
+                android:gravity="center"
+                android:text="@string/takephoto"
+                android:textColor="@color/btn_text_color"
+                android:textSize="@dimen/size_16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_1dp"
+                android:background="@color/wecoo_gray2" />
+
+            <TextView
+                android:id="@+id/setAvatar_txt_pickphoto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_50dp"
+                android:background="@drawable/aleart_bg_buttom"
+                android:gravity="center"
+                android:text="@string/pickphoto"
+                android:textColor="@color/btn_text_color"
+                android:textSize="@dimen/size_16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/setAvatar_txt_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_50dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@drawable/aleart_bg_content"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/btn_text_bg"
+            android:textSize="@dimen/size_16sp" />
+    </LinearLayout>
+
+</LinearLayout>

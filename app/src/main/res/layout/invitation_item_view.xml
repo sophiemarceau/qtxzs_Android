@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/linear_onclick_bg"
+    android:paddingLeft="@dimen/padding_15dp"
+    android:paddingRight="@dimen/padding_15dp">
+
+    <LinearLayout
+        android:id="@+id/invitation_item_llViewTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/invitation_item_txtName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_30dp"
+            android:gravity="bottom"
+            android:text="@string/empty"
+            android:textColor="@color/wecoo_gray6"
+            android:textSize="@dimen/size_15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_30dp">
+
+            <TextView
+                android:id="@+id/invitation_item_txtDesc"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/view_30dp"
+                android:layout_weight="1"
+                android:text="@string/empty"
+                android:textColor="@color/wecoo_gray5"
+                android:textSize="@dimen/size_13sp" />
+
+            <TextView
+                android:id="@+id/invitation_item_txtStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/view_30dp"
+                android:text="@string/empty"
+                android:textColor="@color/wecoo_gray6"
+                android:textSize="@dimen/size_15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/invitation_item_llViewButtom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_30dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/invitation_item_txtDescribe"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/empty"
+                android:textColor="@color/wecoo_gray6"
+                android:textSize="@dimen/size_15sp" />
+
+            <TextView
+                android:id="@+id/invitation_item_txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textColor="@color/wecoo_theme_color"
+                android:textSize="@dimen/size_15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/invitation_item_txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_30dp"
+            android:text="@string/empty"
+            android:textColor="@color/wecoo_gray5"
+            android:textSize="@dimen/size_13sp" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="@dimen/view_180dp"
+        android:layout_height="@dimen/view_100dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_10dp">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="41dp"
+            android:src="@mipmap/icon_contacts_three" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本人推荐: "
+                    android:textColor="@color/wecoo_gray6"
+                    android:textSize="@dimen/size_13sp" />
+
+                <TextView
+                    android:id="@+id/contactInfo_header_txtSelfReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/wecoo_theme_color"
+                    android:textSize="@dimen/size_13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="累计推荐: "
+                    android:textColor="@color/wecoo_gray6"
+                    android:textSize="@dimen/size_13sp" />
+
+                <TextView
+                    android:id="@+id/contactInfo_header_txtTotalReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/wecoo_theme_color"
+                    android:textSize="@dimen/size_13sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/view_1dp"
+        android:layout_height="match_parent"
+        android:background="@color/wecoo_gray1" />
+
+    <LinearLayout
+        android:layout_width="@dimen/view_180dp"
+        android:layout_height="@dimen/view_100dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_10dp">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="41dp"
+            android:src="@mipmap/icon_contacts_four" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本人签约: "
+                    android:textColor="@color/wecoo_gray6"
+                    android:textSize="@dimen/size_13sp" />
+
+                <TextView
+                    android:id="@+id/contactInfo_header_txtSelfSigned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/wecoo_theme_color"
+                    android:textSize="@dimen/size_13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="累计签约: "
+                    android:textColor="@color/wecoo_gray6"
+                    android:textSize="@dimen/size_13sp" />
+
+                <TextView
+                    android:id="@+id/contactInfo_header_txtTotalSigned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/wecoo_theme_color"
+                    android:textSize="@dimen/size_13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

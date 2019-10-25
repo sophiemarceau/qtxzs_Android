@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/top_View"
+        layout="@layout/titlebar_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/commitsuccess_ll_bank"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/commitsuccess_img_Icon"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="50dp"
+                android:src="@mipmap/icon_commit_success" />
+            <TextView
+                android:id="@+id/commitsuccess_txt_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_18sp"
+                android:textColor="@color/wecoo_theme_color"
+                android:layout_margin="@dimen/margin_20dp"
+                android:text="@string/commit_success" />
+            <TextView
+                android:id="@+id/commitsuccess_txt_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:lineSpacingExtra="2dp"
+                android:lineSpacingMultiplier="1.5"
+                android:layout_margin="@dimen/margin_5dp"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:text=""/>
+            <Button
+                android:id="@+id/commitsuccess_btn_Know"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_20dp"
+                android:background="@drawable/login_btn_onclick_bg"
+                android:text="@string/i_konw"
+                android:textColor="@color/login_btn_color_bg"
+                android:textSize="@dimen/size_17sp" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

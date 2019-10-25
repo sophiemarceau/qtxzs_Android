@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/dialogView_ll_top"
+        android:layout_width="@dimen/view_300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <!--android:background="@drawable/white_circular_bg"-->
+
+        <TextView
+            android:id="@+id/download_txt_status"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_50dp"
+            android:background="@drawable/linear_line_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:text="@string/versionUpdate"
+            android:textColor="@color/wecoo_gray6"
+            android:textSize="@dimen/size_18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linear_line_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_20dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_20dp" />
+
+            <TextView
+                android:id="@+id/download_txt_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/updateapp"
+                android:textColor="@color/wecoo_gray6"
+                android:textSize="@dimen/size_16sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/download_txt_Updatemessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:maxLines="5"
+                android:scrollbars="vertical"
+                android:text="@string/updateapp"
+                android:textColor="@color/wecoo_gray5"
+                android:textSize="@dimen/size_15sp"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/download_progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:progressDrawable="@drawable/progressbar_color"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/download_txt_progress"
+                    android:layout_width="@dimen/view_60dp"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:maxLines="1"
+                    android:textColor="@color/wecoo_gray5"
+                    android:textSize="@dimen/size_15sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/download_txt_size"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/number"
+                    android:maxLines="1"
+                    android:textColor="@color/wecoo_gray5"
+                    android:textSize="@dimen/size_15sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/download_ll_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/download_txt_update_later"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/update_later"
+                android:textColor="@color/btn_text_color"
+                android:textSize="@dimen/size_16sp" />
+
+            <View
+                android:layout_width="@dimen/view_1dp"
+                android:layout_height="@dimen/view_45dp"
+                android:background="@color/wecoo_gray1" />
+
+            <TextView
+                android:id="@+id/download_txt_update_now"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/wecoo_theme_color"
+                android:gravity="center"
+                android:text="@string/update_now"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialogView_ll_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/white_circular_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linear_line_bg"
+            android:gravity="center_vertical"
+            android:text="@string/aleart_title"
+            android:textColor="@color/wecoo_gray6"
+            android:textSize="@dimen/size_18sp" />
+
+        <TextView
+            android:id="@+id/dialogView_txt_message"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_10dp"
+            android:text="@string/empty"
+            android:textColor="@color/wecoo_gray5"
+            android:textSize="@dimen/size_15sp" />
+
+        <Button
+            android:id="@+id/dialogView_btn_iKnow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginRight="@dimen/margin_20dp"
+            android:background="@drawable/login_btn_onclick_bg"
+            android:text="@string/i_konw"
+            android:textColor="@color/login_btn_color_bg"
+            android:textSize="@dimen/size_16sp" />
+    </LinearLayout>
+</FrameLayout>

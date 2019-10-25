@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wecoo_pager_bg">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/pager_03"/>
+
+    <Button
+        android:id="@+id/pager_butn_start"
+        android:layout_width="@dimen/view_180dp"
+        android:layout_height="@dimen/view_45dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/guide_btn_start"/>
+</RelativeLayout>

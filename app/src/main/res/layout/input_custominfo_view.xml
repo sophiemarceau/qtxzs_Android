@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/inputCustom_txt_contentsTop"
+                style="@style/text_gray_size14"
+                android:padding="@dimen/padding_15dp"
+                android:text="@string/report_top_content"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_10dp"
+                android:background="@color/wecoo_gray1" />
+
+            <LinearLayout style="@style/custominfo_layout_style">
+
+                <TextView
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|left"
+                    android:text="姓名" />
+
+                <!--android:imeOptions="actionNext"-->
+                <!--actionNone : 回车键，按下后光标到下一行-->
+                <!--actionGo ： Go，-->
+                <!--actionSearch ： 一个放大镜-->
+                <!--actionSend ： Send-->
+                <!--actionNext ： Next-->
+                <!--actionDone ： Done，隐藏软键盘，即使不是最后一个文本输入框-->
+                <EditText
+                    android:id="@+id/inputCustom_edit_name"
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/custom_name"
+                    android:inputType="textPersonName"
+                    android:maxLength="10"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/custominfo_layout_style">
+
+                <TextView
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|left"
+                    android:text="手机" />
+
+                <EditText
+                    android:id="@+id/inputCustom_edit_tel"
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/custom_phone"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_10dp"
+                android:background="@color/wecoo_gray1" />
+
+            <LinearLayout style="@style/custominfo_layout_style">
+
+                <TextView
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/custom_industry" />
+
+                <TextView
+                    android:id="@+id/inputCustom_txt_industry"
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/custom_industry" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/custominfo_layout_style">
+
+                <TextView
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|left"
+                    android:text="代理区域" />
+
+                <TextView
+                    android:id="@+id/inputCustom_txt_region"
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/padding_5dp"
+                    android:drawableRight="@mipmap/icon_my_rightgray"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/agent_area" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/custominfo_layout_style">
+
+                <TextView
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:text="投资预算" />
+
+                <TextView
+                    android:id="@+id/inputCustom_txt_budget"
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/investment_budget" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/custominfo_layout_style">
+
+                <TextView
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:text="计划启动时间" />
+
+                <TextView
+                    android:id="@+id/inputCustom_txt_planTime"
+                    style="@style/custominfo_text_style"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/planstart_time" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/inputCustom_edit_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_120dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="@string/remarks"
+                android:paddingBottom="@dimen/padding_10dp"
+                android:paddingLeft="@dimen/padding_15dp"
+                android:paddingRight="@dimen/padding_20dp"
+                android:paddingTop="@dimen/padding_10dp"
+                android:textColor="@color/wecoo_gray6"
+                android:textColorHint="@color/wecoo_gray4"
+                android:textSize="@dimen/size_16sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_20dp"
+            android:paddingLeft="@dimen/padding_8dp"
+            android:paddingRight="@dimen/padding_8dp">
+
+            <TextView
+                android:id="@+id/inputCustom_txt_contentsButtom"
+                style="@style/text_gray_size14"
+                android:layout_marginLeft="@dimen/margin_7dp"
+                android:text="如果不匹配当前项目，我们会推荐到更合适的项目中"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_50dp" />
+
+            <LinearLayout
+                android:id="@+id/input_ll_saveandCommit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom">
+
+                <Button
+                    android:id="@+id/input_butn_saveInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_8dp"
+                    android:layout_marginRight="@dimen/margin_8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_save_info_bg"
+                    android:text="@string/save_info"
+                    android:textColor="@color/wecoo_theme_color"
+                    android:textSize="@dimen/size_17sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/input_butn_commitReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_8dp"
+                    android:layout_marginRight="@dimen/margin_8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_commit_info_bg"
+                    android:text="@string/Recommend_custom"
+                    android:textColor="@color/wecoo_gray1"
+                    android:textSize="@dimen/size_17sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/input_ll_commitInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/commitInfo_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@mipmap/icon_agree_normal"
+                android:drawablePadding="@dimen/padding_8dp"
+                android:text="客户本人知晓并同意提交该信息"
+                android:textColor="@color/wecoo_gray4"
+                android:textSize="@dimen/size_13sp"
+                android:background="@color/transparent"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

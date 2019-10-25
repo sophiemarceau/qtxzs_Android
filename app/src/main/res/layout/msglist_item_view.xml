@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_15dp"
+    android:paddingRight="@dimen/padding_15dp"
+    android:paddingTop="@dimen/padding_15dp">
+
+    <TextView
+        android:id="@+id/msglist_item_txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/msg_time_circular_bg"
+        android:gravity="center"
+        android:text="2016-11-10 12:35:00" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_10dp">
+
+        <TextView
+            android:id="@+id/msglist_item_txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_10dp"
+            android:paddingRight="@dimen/padding_10dp"
+            android:text="@string/app_name"
+            android:textColor="@color/wecoo_gray6"
+            android:textSize="@dimen/size_16sp" />
+
+        <TextView
+            android:id="@+id/msglist_item_txtContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_10dp"
+            android:lineSpacingExtra="1.5dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text=""
+            android:textColor="@color/wecoo_gray5"
+            android:textSize="@dimen/size_14sp" />
+
+        <LinearLayout
+            android:id="@+id/msglist_item_llLook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@drawable/msg_line_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_10dp"
+            android:paddingRight="@dimen/padding_10dp">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="点击查看"
+                android:textColor="@color/wecoo_theme_color"
+                android:textSize="@dimen/size_14sp" />
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:src="@mipmap/icon_arrow_right_red" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

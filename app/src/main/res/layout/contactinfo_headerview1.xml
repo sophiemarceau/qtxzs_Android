@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/wecoo_gray1"
+    android:orientation="vertical"
+    android:splitMotionEvents="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_70dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/padding_10dp"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:paddingTop="@dimen/padding_10dp">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/view_30dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/contactInfo_header_txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty"
+                    android:textColor="@color/wecoo_gray6"
+                    android:textSize="@dimen/size_16sp" />
+
+                <TextView
+                    android:id="@+id/contactInfo_header_txtLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:background="@drawable/txt_level_red_bg"
+                    android:gravity="center"
+                    android:text="@string/empty"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_10sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/contactInfo_header_txtTel"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/view_20dp"
+                android:gravity="center"
+                android:text="@string/empty"
+                android:textColor="@color/wecoo_gray6" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/contactInfo_header_ivCall"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:padding="@dimen/padding_10dp"
+            android:src="@mipmap/icon_call_phone"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

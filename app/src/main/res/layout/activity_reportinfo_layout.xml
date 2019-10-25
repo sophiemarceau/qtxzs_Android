@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_View"
+        layout="@layout/titlebar_layout" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/reportInfo_rb_basic"
+            style="@style/tab_radiobutn_style"
+            android:checked="true"
+            android:text="@string/report_basic" />
+
+        <RadioButton
+            android:id="@+id/reportInfo_rb_information"
+            style="@style/tab_radiobutn_style"
+            android:text="@string/report_Follow_up_information" />
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/reportInfo_view"
+            layout="@layout/input_custominfo_view" />
+
+        <FrameLayout
+            android:id="@+id/reportInfo_FollowUpView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <com.wecoo.qutianxia.view.refreshload.PtrWecooFrameLayout
+                android:id="@+id/FollowUp_PtrFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/FollowUp_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/wecoo_gray1"
+                    android:dividerHeight="1dp"
+                    android:listSelector="@color/transparent" />
+            </com.wecoo.qutianxia.view.refreshload.PtrWecooFrameLayout>
+
+            <com.wecoo.qutianxia.widget.LoadDataErrorWidget
+                android:id="@+id/FollowUp_loaddataView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

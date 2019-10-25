@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/top_View"
+        layout="@layout/titlebar_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/view_80dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/wecoo_theme_color"
+                    android:paddingTop="@dimen/margin_20dp">
+
+                    <com.wecoo.qutianxia.view.ReportCircleView
+                        android:id="@+id/reportRate_CircleVivw"
+                        android:layout_width="280dp"
+                        android:layout_height="195dp"
+                        android:layout_gravity="center_horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/reportRate_txtNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/number"
+                            android:textColor="@color/white"
+                            android:textSize="50sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/minute"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/padding_15dp"
+                    android:paddingLeft="@dimen/margin_15dp"
+                    android:paddingRight="@dimen/margin_15dp">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/view_1dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="@dimen/margin_15dp"
+                        android:background="@color/wecoo_gray3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/size_15sp"
+                        android:text="规则说明" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/view_1dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                        android:background="@color/wecoo_gray3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <WebView
+                        android:id="@+id/reportrate_wv_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none" />
+                    <com.wecoo.qutianxia.widget.LoadDataErrorWidget
+                        android:id="@+id/reportrate_LoadDataError"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_10dp"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/reportrate_btn_lookDetailed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:background="@drawable/login_btn_onclick_bg"
+                android:text="@string/lookDetailed"
+                android:textColor="@color/login_btn_color_bg"
+                android:textSize="@dimen/size_17sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

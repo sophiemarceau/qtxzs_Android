@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/wecoo_gray1"
+    android:orientation="vertical"
+    android:splitMotionEvents="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_70dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/padding_10dp"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:paddingTop="@dimen/padding_10dp">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/view_30dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/contactInfo_header_txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty"
+                    android:textColor="@color/wecoo_gray6"
+                    android:textSize="@dimen/size_16sp" />
+
+                <TextView
+                    android:id="@+id/contactInfo_header_txtLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:background="@drawable/txt_level_red_bg"
+                    android:gravity="center"
+                    android:text="@string/empty"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/contactInfo_header_txtTel"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/view_20dp"
+                android:gravity="center"
+                android:text="@string/empty"
+                android:textColor="@color/wecoo_gray6" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/contactInfo_header_ivCall"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:padding="@dimen/padding_10dp"
+            android:visibility="gone"
+            android:src="@mipmap/icon_call_phone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_200dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_100dp"
+            android:background="@drawable/linear_line_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/view_180dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_10dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="41dp"
+                    android:src="@mipmap/icon_contacts_one" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="本人赏金: "
+                            android:textColor="@color/wecoo_gray6"
+                            android:textSize="@dimen/size_13sp" />
+
+                        <TextView
+                            android:id="@+id/contactInfo_header_txtSelfSum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/wecoo_theme_color"
+                            android:textSize="@dimen/size_13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="累计赏金: "
+                            android:textColor="@color/wecoo_gray6"
+                            android:textSize="@dimen/size_13sp" />
+
+                        <TextView
+                            android:id="@+id/contactInfo_header_txtTotalSum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/wecoo_theme_color"
+                            android:textSize="@dimen/size_13sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/view_1dp"
+                android:layout_height="match_parent"
+                android:background="@color/wecoo_gray1" />
+
+            <LinearLayout
+                android:layout_width="@dimen/view_180dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_10dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="41dp"
+                    android:src="@mipmap/icon_contacts_two" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="本人邀请: "
+                            android:textColor="@color/wecoo_gray6"
+                            android:textSize="@dimen/size_13sp" />
+
+                        <TextView
+                            android:id="@+id/contactInfo_header_txtSelfInvit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/wecoo_theme_color"
+                            android:textSize="@dimen/size_13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="累计邀请: "
+                            android:textColor="@color/wecoo_gray6"
+                            android:textSize="@dimen/size_13sp" />
+
+                        <TextView
+                            android:id="@+id/contactInfo_header_txtTotalInvit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/wecoo_theme_color"
+                            android:textSize="@dimen/size_13sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_100dp"
+            android:background="@drawable/linear_line_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/view_180dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_10dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="41dp"
+                    android:src="@mipmap/icon_contacts_three" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="本人报备: "
+                            android:textColor="@color/wecoo_gray6"
+                            android:textSize="@dimen/size_13sp" />
+
+                        <TextView
+                            android:id="@+id/contactInfo_header_txtSelfReport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/wecoo_theme_color"
+                            android:textSize="@dimen/size_13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="累计报备: "
+                            android:textColor="@color/wecoo_gray6"
+                            android:textSize="@dimen/size_13sp" />
+
+                        <TextView
+                            android:id="@+id/contactInfo_header_txtTotalReport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/wecoo_theme_color"
+                            android:textSize="@dimen/size_13sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/view_1dp"
+                android:layout_height="match_parent"
+                android:background="@color/wecoo_gray1" />
+
+            <LinearLayout
+                android:layout_width="@dimen/view_180dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_10dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="41dp"
+                    android:src="@mipmap/icon_contacts_four" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="本人签约: "
+                            android:textColor="@color/wecoo_gray6"
+                            android:textSize="@dimen/size_13sp" />
+
+                        <TextView
+                            android:id="@+id/contactInfo_header_txtSelfSigned"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/wecoo_theme_color"
+                            android:textSize="@dimen/size_13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="累计签约: "
+                            android:textColor="@color/wecoo_gray6"
+                            android:textSize="@dimen/size_13sp" />
+
+                        <TextView
+                            android:id="@+id/contactInfo_header_txtTotalSigned"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/wecoo_theme_color"
+                            android:textSize="@dimen/size_13sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contactInfo_header_llSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@drawable/linear_onclick_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="上级人脉"
+            android:textColor="@color/wecoo_gray6"
+            android:textSize="@dimen/size_16sp" />
+
+        <TextView
+            android:id="@+id/contactInfo_header_txtParentTel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="@dimen/padding_10dp"
+            android:drawableRight="@mipmap/icon_my_rightgray"
+            android:gravity="center_vertical|right"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/wecoo_gray5"
+            android:textSize="@dimen/size_15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:text="用户动态"
+        android:textColor="@color/wecoo_gray6"
+        android:textSize="@dimen/size_16sp" />
+</LinearLayout>

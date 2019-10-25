@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/top_View"
+        layout="@layout/titlebar_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/reportprogress_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/wecoo_gray1"
+            android:divider="@color/white_alpha_100"
+            android:dividerHeight="0dp"
+            android:paddingTop="@dimen/margin_3dp"
+            android:scrollbars="none" />
+        <com.wecoo.qutianxia.widget.LoadDataErrorWidget
+            android:id="@+id/reportprogress_loaddataView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

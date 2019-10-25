@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/filter_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/filter_sort_linear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/filter_tv_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="综合排序"
+                android:textColor="@color/wecoo_gray5"
+                android:textSize="@dimen/size_15sp" />
+
+            <ImageView
+                android:id="@+id/filter_iv_sort_arrow"
+                android:layout_width="11dp"
+                android:layout_height="6dp"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/project_down_arrow" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:background="@color/wecoo_gray3" />
+
+        <LinearLayout
+            android:id="@+id/filter_types_linear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/filter_tv_types"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部行业"
+                android:textColor="@color/wecoo_gray5"
+                android:textSize="@dimen/size_15sp" />
+
+            <ImageView
+                android:id="@+id/filter_iv_types_arrow"
+                android:layout_width="11dp"
+                android:layout_height="6dp"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/project_down_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/wecoo_gray3" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/filter_view_mask_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blank_alpha_40" />
+
+        <ListView
+            android:id="@+id/filter_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="125dp"
+            android:background="@color/white"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/filter_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/padding_10dp"
+            android:paddingBottom="@dimen/padding_10dp"
+            android:paddingLeft="@dimen/padding_5dp"
+            android:paddingRight="@dimen/padding_5dp"
+            android:background="@color/white"
+            android:numColumns="4"
+            android:horizontalSpacing="@dimen/margin_5dp"
+            android:verticalSpacing="@dimen/margin_5dp"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+    </FrameLayout>
+</LinearLayout>

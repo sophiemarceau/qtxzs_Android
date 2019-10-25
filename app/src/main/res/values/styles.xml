@@ -1,0 +1,197 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/wecoo_gray1</item>-->
+        <item name="colorPrimaryDark">@color/wecoo_theme_color</item>
+        <!--<item name="colorAccent">@color/wecoo_gray1</item>-->
+        <item name="android:windowBackground">@color/wecoo_gray1</item>
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+    </style>
+
+    <style name="ActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/white</item>
+        <item name="backgroundStacked">@color/white</item>
+    </style>
+
+    <!-- 为 Theme 设置透明属性 -->
+    <style name="AppThemeStyle" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@mipmap/start</item>
+        <item name="colorPrimaryDark">@color/wecoo_theme_color</item>
+    </style>
+
+    <style name="SelectPhotoStyle" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowFrame">@null</item> 
+        <item name="android:windowFullscreen">true</item>   <!-- 全屏显示   -->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+    </style>
+
+    <!-- 自定义AlertDialog的样式 -->
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowFrame">@null</item> 
+        <item name="android:windowFullscreen">true</item>  <!--  全屏显示   -->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+    </style>
+
+    <style name="tab_radiobutn_style">
+        <item name="android:textSize">@dimen/size_16sp</item>
+        <item name="android:textColor">@color/tab_radiobtn_color</item>
+        <item name="android:background">@drawable/my_report_rb_bg</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--   首页的快速入口  -->
+    <style name="home_butn_fastEntrance_style">
+        <item name="android:textColor">@color/wecoo_gray5</item>
+        <item name="android:background">@drawable/linear_onclick_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/size_13sp</item>
+    </style>
+
+    <!--   我的文本style  -->
+    <style name="my_txt_style">
+        <item name="android:textColor">@color/wecoo_gray5</item>
+        <item name="android:textSize">@dimen/size_13sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--   我的报备 item style  -->
+    <style name="my_report_item_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <!--<item name="android:background">@drawable/linear_onclick_bg</item>-->
+    </style>
+    <!--   登录输入框  -->
+    <style name="login_edit_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/view_50dp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingLeft">@dimen/padding_5dp</item>
+        <item name="android:textSize">@dimen/size_15sp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/wecoo_gray6</item>
+        <item name="android:textColorHint">@color/wecoo_gray4</item>
+    </style>
+    <!--   客户信息 -->
+    <style name="custominfo_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/view_55dp</item>
+        <item name="android:paddingLeft">@dimen/padding_15dp</item>
+        <item name="android:paddingRight">@dimen/padding_15dp</item>
+        <item name="android:background">@drawable/linear_line_bg</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--     输入框的配置      -->
+    <style name="custominfo_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/view_54dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textSize">@dimen/size_16sp</item>
+        <item name="android:textColor">@color/wecoo_gray6</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColorHint">@color/wecoo_gray4</item>
+    </style>
+
+    <style name="edit_text_hintstyle">
+        <item name="android:textColorHint">@color/wecoo_gray4</item>
+    </style>
+
+    <!--  Text View   白色的字体   14号字    -->
+    <style name="text_white_size14">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/size_14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--  Text View   灰色的字体   14号字    -->
+    <style name="text_gray_size14">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/size_14sp</item>
+        <item name="android:textColor">@color/wecoo_gray5</item>
+    </style>
+
+    <!-- popupwindow -->
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/in_from_buttom</item>
+        <item name="android:windowExitAnimation">@anim/out_to_buttom</item>
+    </style>
+    <style name="dialogAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/in_from_right</item>
+        <item name="android:windowExitAnimation">@anim/out_to_right</item>
+    </style>
+
+    <style name="Dialog_No_Board" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/white_alpha_100</item>
+    </style>
+
+    <!--   用户资料（用户管理）修改 -->
+    <style name="usermanager_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/view_60dp</item>
+        <item name="android:background">@drawable/linear_line_bg</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">@dimen/padding_2dp</item>
+        <item name="android:paddingLeft">@dimen/padding_15dp</item>
+        <item name="android:paddingRight">@dimen/padding_15dp</item>
+    </style>
+
+    <style name="usermanager_edit_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">text</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textColor">@color/wecoo_gray5</item>
+        <item name="android:textColorHint">@color/wecoo_gray4</item>
+        <item name="android:textSize">@dimen/size_16sp</item>
+    </style>
+
+    <!--   项目详情中锦囊view -->
+    <style name="projectinfo_silkbagTxt_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/view_50dp</item>
+        <item name="android:background">@drawable/linear_line_bg</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/margin_15dp</item>
+        <item name="android:paddingRight">@dimen/padding_15dp</item>
+        <item name="android:drawableRight">@mipmap/icon_my_rightgray</item>
+        <item name="android:textSize">@dimen/size_16sp</item>
+        <item name="android:textColor">@color/wecoo_gray4</item>
+    </style>
+</resources>

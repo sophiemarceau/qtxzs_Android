@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blank_alpha_40"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/padding_15dp"
+    android:paddingTop="@dimen/view_50dp">
+
+    <LinearLayout
+        android:layout_width="@dimen/view_120dp"
+        android:layout_height="@dimen/view_100dp"
+        android:background="@drawable/icon_sort_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/popView_txt_rewardQuota"
+            android:layout_width="@dimen/view_100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/icon_sort_gray_default"
+            android:gravity="center"
+            android:paddingRight="@dimen/padding_10dp"
+            android:text="赏金额度"
+            android:textColor="@color/wecoo_gray5" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_1dp"
+            android:background="@color/wecoo_gray1"/>
+        <TextView
+            android:id="@+id/popView_txt_registTime"
+            android:layout_width="@dimen/view_100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/icon_sort_gray_default"
+            android:gravity="center"
+            android:paddingRight="@dimen/padding_10dp"
+            android:text="注册时间"
+            android:textColor="@color/wecoo_gray5" />
+    </LinearLayout>
+
+</LinearLayout>

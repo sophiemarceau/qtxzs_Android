@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/YQheader_txt_rule"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50dp"
+        android:paddingRight="@dimen/margin_15dp"
+        android:gravity="center_vertical|right"
+        android:text="查看邀请规则 >>"
+        android:visibility="gone"
+        android:textColor="@color/wecoo_gray5"
+        android:background="@color/white"/>
+
+</LinearLayout>

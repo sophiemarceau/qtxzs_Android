@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_View"
+        layout="@layout/titlebar_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.wecoo.qutianxia.view.refreshload.PtrWecooFrameLayout
+            android:id="@+id/project_PtrFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/view_45dp">
+
+            <ListView
+                android:id="@+id/project_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/wecoo_gray1"
+                android:dividerHeight="10dp"
+                android:background="@color/white"/>
+        </com.wecoo.qutianxia.view.refreshload.PtrWecooFrameLayout>
+
+        <com.wecoo.qutianxia.widget.LoadDataErrorWidget
+            android:id="@+id/project_LoadDataError"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" />
+
+        <com.wecoo.qutianxia.view.FilterView
+            android:id="@+id/project_top_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" />
+    </FrameLayout>
+</LinearLayout>

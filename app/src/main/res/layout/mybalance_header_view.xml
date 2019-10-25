@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/wecoo_gray1"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="53dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_20dp"
+        android:src="@mipmap/icon_balance_big" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/withdrawalNum"
+        android:textColor="@color/wecoo_gray6"
+        android:textSize="@dimen/size_14sp" />
+
+    <TextView
+        android:id="@+id/balance_txt_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_10dp"
+        android:text="¥0.00"
+        android:textColor="@color/wecoo_theme_color"
+        android:textSize="@dimen/size_30sp" />
+
+    <TextView
+        android:id="@+id/balance_txt_withdrawals_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:text="@string/empty"
+        android:textColor="@color/wecoo_gray5"
+        android:textSize="@dimen/size_12sp" />
+
+    <Button
+        android:id="@+id/balance_btn_Withdrawals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/margin_20dp"
+        android:layout_marginRight="@dimen/margin_20dp"
+        android:background="@drawable/login_btn_onclick_bg"
+        android:text="@string/apply_withdrawals"
+        android:textColor="@color/login_btn_color_bg" />
+
+    <TextView
+        android:id="@+id/balance_txt_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:drawableLeft="@mipmap/icon_balance_help"
+        android:drawablePadding="@dimen/padding_5dp"
+        android:text="@string/balance_help"
+        android:textColor="@color/wecoo_theme_color"
+        android:textSize="@dimen/size_14sp" />
+
+    <TextView
+        android:id="@+id/balance_txt_topguize"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:background="@drawable/linear_line_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:text="@string/balancelist"
+        android:textColor="@color/wecoo_gray5"
+        android:textSize="@dimen/size_15sp" />
+
+</LinearLayout>

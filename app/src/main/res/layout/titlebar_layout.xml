@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/view_49dp"
+    android:background="@color/wecoo_theme_color"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/title_fl_left"
+        android:layout_width="@dimen/view_80dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title_text_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/padding_5dp"
+            android:text="@string/empty"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_14sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/title_image_leftBack"
+            android:layout_width="@dimen/view_49dp"
+            android:layout_height="@dimen/view_49dp"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="@dimen/padding_15dp"
+            android:paddingTop="@dimen/padding_15dp"
+            android:src="@mipmap/icon_back"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/title_textView_center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/empty"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_18sp" />
+
+    <FrameLayout
+        android:id="@+id/title_fl_right"
+        android:layout_width="@dimen/view_80dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title_text_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="@dimen/padding_5dp"
+            android:text="@string/empty"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_14sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/title_image_right"
+            android:layout_width="@dimen/view_49dp"
+            android:layout_height="@dimen/view_49dp"
+            android:layout_gravity="center_vertical|right"
+            android:padding="@dimen/padding_15dp"
+            android:src="@mipmap/icon_share"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

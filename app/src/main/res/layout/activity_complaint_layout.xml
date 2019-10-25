@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wecoo_gray1"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_View"
+        layout="@layout/titlebar_layout" />
+
+    <EditText
+        android:id="@+id/complaint_edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_110dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:maxLength="400"
+        android:hint="请输入投诉内容，我们将不断改进，请尽量详细描述您遇到的问题"
+        android:padding="@dimen/padding_15dp"
+        android:textColor="@color/wecoo_gray6"
+        android:textColorHint="#aaa"
+        android:textSize="@dimen/size_16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_110dp"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/padding_7dp">
+
+        <FrameLayout
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_margin="@dimen/margin_7dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:text="@string/upload_pics"
+                android:textSize="@dimen/size_12sp" />
+
+            <ImageView
+                android:id="@+id/complaint_image_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_upload_img" />
+
+            <ImageView
+                android:id="@+id/complaint_img_closeOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/margin_10dp"
+                android:src="@mipmap/icon_broadcast_close" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/complaint_frameLayout_two"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_margin="@dimen/margin_7dp"
+            android:layout_weight="1"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:text="@string/upload_pics"
+                android:textSize="@dimen/size_12sp" />
+
+            <ImageView
+                android:id="@+id/complaint_image_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_upload_img" />
+
+            <ImageView
+                android:id="@+id/complaint_img_closeTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/margin_10dp"
+                android:src="@mipmap/icon_broadcast_close" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/complaint_frameLayout_three"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_margin="@dimen/margin_7dp"
+            android:layout_weight="1"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:text="@string/upload_pics"
+                android:textSize="@dimen/size_12sp" />
+
+            <ImageView
+                android:id="@+id/complaint_image_three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_upload_img" />
+
+            <ImageView
+                android:id="@+id/complaint_img_closeThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/margin_10dp"
+                android:src="@mipmap/icon_broadcast_close" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/complaint_frameLayout_four"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_margin="@dimen/margin_7dp"
+            android:layout_weight="1"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:text="@string/upload_pics"
+                android:textSize="@dimen/size_12sp" />
+
+            <ImageView
+                android:id="@+id/complaint_image_four"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_upload_img" />
+
+            <ImageView
+                android:id="@+id/complaint_img_closeFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/margin_10dp"
+                android:src="@mipmap/icon_broadcast_close" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/complaint_butn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_20dp"
+        android:background="@drawable/login_btn_onclick_bg"
+        android:text="@string/commit"
+        android:textColor="@color/login_btn_color_bg" />
+</LinearLayout>

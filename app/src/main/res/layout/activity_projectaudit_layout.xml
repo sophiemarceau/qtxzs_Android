@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_View"
+        layout="@layout/titlebar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_50dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/ProjectAudit_rb_verifing"
+                style="@style/tab_radiobutn_style"
+                android:checked="true"
+                android:text="@string/verifing" />
+
+            <RadioButton
+                android:id="@+id/ProjectAudit_rb_followuping"
+                style="@style/tab_radiobutn_style"
+                android:text="@string/followuping" />
+
+            <RadioButton
+                android:id="@+id/ProjectAudit_rb_signed"
+                style="@style/tab_radiobutn_style"
+                android:text="@string/signed" />
+
+            <RadioButton
+                android:id="@+id/ProjectAudit_rb_returned"
+                style="@style/tab_radiobutn_style"
+                android:text="@string/returned" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.wecoo.qutianxia.view.refreshload.PtrWecooFrameLayout
+                android:id="@+id/ProjectAudit_PtrFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/ProjectAudit_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/transparent"
+                    android:dividerHeight="0dp" />
+            </com.wecoo.qutianxia.view.refreshload.PtrWecooFrameLayout>
+
+            <com.wecoo.qutianxia.widget.LoadDataErrorWidget
+                android:id="@+id/ProjectAudit_loaddataView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

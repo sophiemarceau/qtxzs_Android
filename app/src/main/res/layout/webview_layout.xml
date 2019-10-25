@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_View"
+        layout="@layout/titlebar_layout" />
+
+    <ProgressBar
+        android:id="@+id/pubWe_pBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_1dp"
+        android:progressDrawable="@drawable/progressbar_color" />
+    <!--    公共的 WebView  -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/pubWeb_webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.wecoo.qutianxia.widget.LoadDataErrorWidget
+            android:id="@+id/pubWeb_LoadDataErrorWidget"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

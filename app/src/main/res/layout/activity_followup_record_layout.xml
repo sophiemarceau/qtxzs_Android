@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_View"
+        layout="@layout/titlebar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+
+            <com.wecoo.qutianxia.view.refreshload.PtrWecooFrameLayout
+                android:id="@+id/followUp_Record_PtrFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/followUp_Record_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/transparent"
+                    android:dividerHeight="0dp" />
+            </com.wecoo.qutianxia.view.refreshload.PtrWecooFrameLayout>
+
+            <com.wecoo.qutianxia.widget.LoadDataErrorWidget
+                android:id="@+id/followUp_Record_loaddataView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_49dp"
+            android:gravity="center_vertical"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/followUp_Record_item_ViewAddChatLog"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/view_20dp"
+                    android:layout_height="@dimen/view_20dp"
+                    android:src="@mipmap/icon_enterprise_review_add" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_3dp"
+                    android:gravity="center"
+                    android:text="添加记录"
+                    android:textColor="@color/wecoo_gray6"
+                    android:textSize="@dimen/size_11sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/item_fengexian_view"
+                android:layout_width="0.5dp"
+                android:layout_height="30dp"
+                android:background="#FFE8E8E8"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/followUp_Record_item_ViewReviewPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/view_20dp"
+                    android:layout_height="@dimen/view_20dp"
+                    android:src="@mipmap/icon_enterprise_review_phone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_3dp"
+                    android:gravity="center"
+                    android:text="拨打电话"
+                    android:textColor="@color/wecoo_gray6"
+                    android:textSize="@dimen/size_11sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/followUp_Record_item_txtReturned"
+                android:layout_width="@dimen/view_110dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:background="@color/wecoo_gray5"
+                android:gravity="center"
+                android:text="退回"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_16sp" />
+
+            <TextView
+                android:id="@+id/followUp_Record_item_txtSure"
+                android:layout_width="@dimen/view_110dp"
+                android:layout_height="match_parent"
+                android:background="@color/wecoo_theme_color"
+                android:gravity="center"
+                android:text="确认签约"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

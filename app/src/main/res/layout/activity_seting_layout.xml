@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_View"
+        layout="@layout/titlebar_layout" />
+
+    <TextView
+        android:id="@+id/accountSet_txt_update"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50dp"
+        android:layout_marginBottom="@dimen/margin_1dp"
+        android:background="@drawable/linear_onclick_bg"
+        android:drawableRight="@mipmap/icon_my_rightgray"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingRight="@dimen/margin_15dp"
+        android:text="@string/updatePassword"
+        android:textColor="@color/wecoo_gray6"
+        android:textSize="@dimen/size_16sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/accountSet_txt_reset"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50dp"
+        android:layout_marginBottom="@dimen/margin_1dp"
+        android:background="@drawable/linear_onclick_bg"
+        android:drawableRight="@mipmap/icon_my_rightgray"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingRight="@dimen/margin_15dp"
+        android:text="@string/account_security"
+        android:textColor="@color/wecoo_gray6"
+        android:textSize="@dimen/size_16sp" />
+
+    <TextView
+        android:id="@+id/Setting_txt_checkApp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50dp"
+        android:layout_marginBottom="@dimen/margin_1dp"
+        android:background="@drawable/linear_onclick_bg"
+        android:drawableRight="@mipmap/icon_my_rightgray"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingRight="@dimen/margin_15dp"
+        android:text="@string/appCheck"
+        android:textColor="@color/wecoo_gray6"
+        android:textSize="@dimen/size_16sp"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/setting_fl_cache"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/setting_txt_cacheClean"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/cleancache"
+            android:textColor="@color/wecoo_gray6"
+            android:textSize="@dimen/size_16sp" />
+
+        <TextView
+            android:id="@+id/setting_txt_cacheSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:text="0B"
+            android:textColor="@color/wecoo_gray4" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/setting_txt_exitlogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50dp"
+        android:layout_margin="@dimen/margin_20dp"
+        android:background="@drawable/login_btn_onclick_bg"
+        android:gravity="center"
+        android:text="@string/exitlogin"
+        android:textSize="@dimen/size_18sp"
+        android:textColor="@color/login_btn_color_bg"
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/linear_onclick_bg">
+
+    <View
+        android:id="@+id/my_item_headview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_10dp"
+        android:background="@color/wecoo_gray1"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_1dp"
+        android:background="@color/wecoo_gray1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_15dp">
+
+        <ImageView
+            android:id="@+id/my_item_image"
+            android:layout_width="@dimen/view_20dp"
+            android:layout_height="@dimen/view_20dp"
+            android:src="@mipmap/icon_my_customer" />
+
+        <TextView
+            android:id="@+id/my_item_text"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/empty"
+            android:textSize="@dimen/size_16sp"
+            android:textColor="@color/wecoo_gray6" />
+
+        <TextView
+            android:id="@+id/my_item_textNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/margin_5dp"
+            android:textSize="@dimen/size_13sp"
+            android:drawableRight="@mipmap/icon_my_rightgray"
+            android:text="@string/empty"
+            android:textColor="@color/wecoo_gray5" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/my_item_footview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_10dp"
+        android:background="@color/wecoo_gray1"
+        android:visibility="gone" />
+</LinearLayout>

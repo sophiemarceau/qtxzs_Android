@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_80dp"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/YQheader_yqNum_ll"
+            style="@style/my_report_item_style">
+
+            <TextView
+                android:id="@+id/YQheader_txt_yqNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_invitation_num"
+                android:drawablePadding="@dimen/padding_5dp"
+                android:text="0人"
+                android:textColor="@color/wecoo_theme_color"
+                android:textSize="@dimen/size_18sp" />
+
+            <TextView
+                android:id="@+id/headerView_txt_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:text="@string/yqnum"
+                android:textColor="@color/wecoo_gray5"
+                android:textSize="@dimen/size_13sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="@dimen/view_65dp"
+            android:background="@color/wecoo_gray2" />
+
+        <LinearLayout
+            android:id="@+id/YQheader_Price_ll"
+            style="@style/my_report_item_style">
+
+            <TextView
+                android:id="@+id/YQheader_txt_yqPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_invitation_reward"
+                android:drawablePadding="@dimen/padding_5dp"
+                android:text="0元"
+                android:textColor="@color/wecoo_theme_color"
+                android:textSize="@dimen/size_18sp" />
+
+            <TextView
+                android:id="@+id/headerView_txt_profit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:text="@string/yqActprice"
+                android:textColor="@color/wecoo_gray5"
+                android:textSize="@dimen/size_13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_10dp"
+        android:background="@color/wecoo_gray1" />
+
+    <LinearLayout
+        android:id="@+id/reportInformation_topView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_40dp"
+        android:background="@drawable/linear_line_bg"
+        android:paddingLeft="@dimen/padding_15dp">
+
+        <TextView
+            android:id="@+id/reportInformation_txt_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@mipmap/icon_report_feedback"
+            android:drawablePadding="@dimen/padding_7dp"
+            android:text="平台反馈"
+            android:textColor="@color/wecoo_gray5"
+            android:textSize="@dimen/size_15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reportInformation_ll_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_10dp"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:paddingTop="@dimen/padding_10dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/reportInformation_txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/wecoo_gray6"
+                android:textSize="@dimen/size_16sp" />
+
+            <TextView
+                android:id="@+id/reportInformation_txt_status"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableRight="@mipmap/icon_my_rightgray"
+                android:drawablePadding="@dimen/padding_10dp"
+                android:gravity="right"
+                android:text="查看"
+                android:textColor="@color/wecoo_gray4"
+                android:textSize="@dimen/size_14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/reportInformation_txt_createtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:text=""
+            android:textColor="@color/wecoo_gray4"
+            android:textSize="@dimen/size_12sp" />
+
+        <TextView
+            android:id="@+id/reportInformation_txt_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/wecoo_gray5"
+            android:textSize="@dimen/size_14sp" />
+    </LinearLayout>
+</LinearLayout>

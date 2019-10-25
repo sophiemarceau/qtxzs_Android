@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ptr_refresh_header_rotate_img"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/pull_to_refresh_arrow" />
+
+        <ProgressBar
+            android:id="@+id/ptr_refresh_header_progressbar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:indeterminateDrawable="@anim/pull_to_refresh_progressbar"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="@dimen/view_30dp"
+        android:layout_height="@dimen/view_1dp" />
+
+    <LinearLayout
+        android:id="@+id/ptr_refresh_header_header_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ptr_refresh_header_txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/wecoo_gray5"
+            android:text="@string/pull_to_refresh"
+            android:textSize="@dimen/size_14sp" />
+
+        <TextView
+            android:id="@+id/ptr_refresh_header_txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/wecoo_gray4"
+            android:text="刚刚"
+            android:textSize="@dimen/size_12sp" />
+    </LinearLayout>
+
+</LinearLayout>

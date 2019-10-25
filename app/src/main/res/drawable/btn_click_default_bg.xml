@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 填充颜色 -->
+    <solid android:color="@color/wecoo_theme_color" />
+    <!-- 线的宽度，颜色灰色 -->
+    <stroke
+        android:width="@dimen/view_1dp"
+        android:color="@color/transparent" />
+    <size
+        android:width="345dp"
+        android:height="45dp"/>
+    <!-- 矩形的圆角半径 -->
+    <corners android:radius="50dp" />
+</shape>

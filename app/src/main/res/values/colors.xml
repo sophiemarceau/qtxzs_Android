@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#0fff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#F5A623</color>
+    <color name="blue">#65b4ef</color>
+    <color name="red">#F00</color>
+    <color name="green">#0f0</color>
+    <color name="pink_red">#ff9496</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+    <!--    主题颜色     -->
+    <color name="wecoo_theme_color">#e83e41</color>
+    <color name="wecoo_pager_bg">#ea4246</color>
+    <!--灰色 由深到浅 3 2 1-->
+    <color name="wecoo_gray6">#333333</color>
+    <color name="wecoo_gray5">#666666</color>
+    <color name="wecoo_gray4">#999999</color>
+    <color name="wecoo_gray3">#e8e8e8</color>
+    <color name="wecoo_gray2">#dddddd</color>
+    <color name="wecoo_gray1">#f4f4f4</color>
+    <color name="default_pics">#eeeeee</color>
+
+    <!--   透明颜色值   -->
+    <color name="white_alpha_100">#00ffffff</color>
+    <color name="white_alpha_80">#ccffffff</color>
+    <color name="white_alpha_30">#4cffffff</color>
+    <color name="white_alpha_60">#99ffffff</color>
+    <color name="white_alpha_50">#80ffffff</color>
+    <color name="white_alpha_20">#33ffffff</color>
+    <color name="blank_alpha_50">#80000000</color>
+    <color name="blank_alpha_75">#c0000000</color>
+    <color name="blank_alpha_80">#cc000000</color>
+    <color name="blank_alpha_10">#88888888</color>
+    <color name="blank_alpha_20">#33000000</color>
+    <color name="blank_alpha_40">#66000000</color>
+    <color name="blank_alpha_100">#00000000</color>
+
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+</resources>

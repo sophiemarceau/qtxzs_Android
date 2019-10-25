@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_168dp">
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/home_header_ConvenientBanner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_168dp"
+            app:canLoop="true"
+            android:background="@color/default_pics"/>
+        <!--app:canLoop="true" //控制循环与否-->
+
+        <LinearLayout
+            android:id="@+id/home_header_container"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/home_banner_index_mask" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_90dp"
+        android:paddingBottom="@dimen/padding_5dp"
+        android:paddingTop="@dimen/padding_5dp">
+
+        <TextView
+            android:id="@+id/home_header_btnActive"
+            style="@style/home_butn_fastEntrance_style"
+            android:drawableTop="@mipmap/icon_homemenu_01"
+            android:text="@string/my_bunos" />
+
+        <TextView
+            android:id="@+id/home_header_btnInvitation"
+            style="@style/home_butn_fastEntrance_style"
+            android:drawableTop="@mipmap/icon_homemenu_02"
+            android:text="@string/my_invitation" />
+
+        <TextView
+            android:id="@+id/home_header_btnFollow"
+            style="@style/home_butn_fastEntrance_style"
+            android:drawableTop="@mipmap/icon_homemenu_03"
+            android:text="@string/my_follow" />
+
+        <TextView
+            android:id="@+id/home_header_btnReport"
+            style="@style/home_butn_fastEntrance_style"
+            android:drawableTop="@mipmap/icon_homemenu_04"
+            android:text="@string/my_report" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_headerView_newbie_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_10dp"
+            android:background="@color/wecoo_gray1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="77dp"
+                android:background="@mipmap/bg_newcomer"
+                android:ems="1"
+                android:gravity="center_horizontal"
+                android:paddingLeft="@dimen/padding_5dp"
+                android:paddingRight="@dimen/padding_5dp"
+                android:paddingTop="@dimen/padding_3dp"
+                android:text="@string/newbie_guide"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_12sp" />
+
+            <LinearLayout
+                android:id="@+id/home_headerView_Orders_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/view_60dp"
+                    android:layout_height="@dimen/view_60dp"
+                    android:layout_marginBottom="@dimen/margin_10dp"
+                    android:src="@mipmap/icon_newcomer_step1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/newbie_guide_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_2dp"
+                    android:text="@string/orders_report"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/view_30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/msg_line_bg" />
+
+            <LinearLayout
+                android:id="@+id/home_headerView_ReportCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/view_60dp"
+                    android:layout_height="@dimen/view_60dp"
+                    android:layout_marginBottom="@dimen/margin_10dp"
+                    android:src="@mipmap/icon_newcomer_step2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/newbie_guide_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_2dp"
+                    android:text="@string/Recommend_custom"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/view_30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/msg_line_bg" />
+
+            <LinearLayout
+                android:id="@+id/home_headerView_Withdrawals"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/view_60dp"
+                    android:layout_height="@dimen/view_60dp"
+                    android:layout_marginBottom="@dimen/margin_10dp"
+                    android:src="@mipmap/icon_newcomer_step3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/newbie_guide_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_2dp"
+                    android:text="@string/project_withdrawals"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

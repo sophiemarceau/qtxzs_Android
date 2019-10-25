@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_100dp"
+        android:background="@drawable/linear_onclick_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/follow_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_3dp"
+                android:maxLines="1"
+                android:text="@string/app_name"
+                android:textColor="@color/wecoo_gray6"
+                android:textSize="@dimen/size_15sp"/>
+
+            <TextView
+                android:id="@+id/follow_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_2dp"
+                android:maxLines="1"
+                android:textColor="@color/wecoo_gray4"
+                android:textSize="@dimen/size_13sp"
+                android:text="@string/description"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_5dp"
+                android:paddingTop="@dimen/padding_10dp">
+
+                <TextView
+                    android:id="@+id/follow_txt_count1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/wecoo_gray4"
+                    android:textSize="@dimen/size_13sp"
+                    android:text="最高" />
+
+                <TextView
+                    android:id="@+id/follow_txt_count2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/wecoo_theme_color"
+                    android:textSize="@dimen/size_22sp"
+                    android:text="365" />
+
+                <TextView
+                    android:id="@+id/follow_txt_count3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/wecoo_gray4"
+                    android:textSize="@dimen/size_13sp"
+                    android:text="元  已成" />
+
+                <TextView
+                    android:id="@+id/follow_txt_count4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/wecoo_theme_color"
+                    android:textSize="@dimen/size_13sp"
+                    android:text="5" />
+
+                <TextView
+                    android:id="@+id/follow_txt_count5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/wecoo_gray4"
+                    android:textSize="@dimen/size_14sp"
+                    android:text="单" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/follow_img_projectStatus"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/cover_project_overdue"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_1dp"
+        android:background="@color/wecoo_gray1" />
+</LinearLayout>

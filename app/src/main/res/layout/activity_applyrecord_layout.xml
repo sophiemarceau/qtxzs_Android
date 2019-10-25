@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wecoo_gray1"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_View"
+        layout="@layout/titlebar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_50dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/applyRecord_rb_all"
+                style="@style/tab_radiobutn_style"
+                android:checked="true"
+                android:text="@string/allRecord" />
+
+            <RadioButton
+                android:id="@+id/applyRecord_rb_daidakuan"
+                style="@style/tab_radiobutn_style"
+                android:text="@string/Pending_payment" />
+
+            <RadioButton
+                android:id="@+id/applyRecord_rb_yidakuan"
+                style="@style/tab_radiobutn_style"
+                android:text="@string/Already_hit_the_money" />
+
+            <RadioButton
+                android:id="@+id/applyRecord_rb_dakuanfail"
+                style="@style/tab_radiobutn_style"
+                android:text="@string/Failure_to_play" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.wecoo.qutianxia.view.refreshload.PtrWecooFrameLayout
+                android:id="@+id/ApplyRecord_PtrFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/ApplyRecord_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/wecoo_gray1"
+                    android:divider="@color/transparent"
+                    android:dividerHeight="10dp"
+                    android:listSelector="@color/transparent" />
+            </com.wecoo.qutianxia.view.refreshload.PtrWecooFrameLayout>
+
+            <com.wecoo.qutianxia.widget.LoadDataErrorWidget
+                android:id="@+id/ApplyRecord_loaddataView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

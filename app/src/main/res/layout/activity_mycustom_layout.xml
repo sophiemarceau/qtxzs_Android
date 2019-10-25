@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_View"
+        layout="@layout/titlebar_layout" />
+
+    <RadioGroup
+        android:id="@+id/myCustom_rg_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/myCustom_rb_all"
+            style="@style/tab_radiobutn_style"
+            android:checked="true"
+            android:text="@string/all" />
+
+        <RadioButton
+            android:id="@+id/myCustom_rb_nolock"
+            style="@style/tab_radiobutn_style"
+            android:text="@string/nolock" />
+
+        <RadioButton
+            android:id="@+id/myCustom_rb_locking"
+            style="@style/tab_radiobutn_style"
+            android:text="@string/locking" />
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/mycustom_ll_dataview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mycustom_txt_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/wecoo_gray1"
+                android:padding="@dimen/padding_15dp"
+                android:text="@string/empty"
+                android:textSize="@dimen/size_14sp"
+                android:visibility="visible" />
+
+            <com.wecoo.qutianxia.view.refreshload.PtrWecooFrameLayout
+                android:id="@+id/mCustom_PtrFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.baoyz.swipemenulistview.SwipeMenuListView
+                    android:id="@+id/mCustom_SwipeMenuListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/transparent"
+                    android:dividerHeight="0dp" />
+
+            </com.wecoo.qutianxia.view.refreshload.PtrWecooFrameLayout>
+        </LinearLayout>
+
+        <com.wecoo.qutianxia.widget.LoadDataErrorWidget
+            android:id="@+id/mycustom_loadDataView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

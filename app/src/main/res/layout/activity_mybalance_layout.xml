@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wecoo_gray1"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_View"
+        layout="@layout/titlebar_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.wecoo.qutianxia.view.refreshload.PtrWecooFrameLayout
+            android:id="@+id/myBalance_PtrFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/myBalance_listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/transparent"
+                android:dividerHeight="0dp"/>
+        </com.wecoo.qutianxia.view.refreshload.PtrWecooFrameLayout>
+
+        <com.wecoo.qutianxia.widget.LoadDataErrorWidget
+            android:id="@+id/balance_loaddataView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/balance_txt_topDetailed"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/linear_line_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_15dp"
+            android:text="@string/balancelist"
+            android:textColor="@color/wecoo_gray5"
+            android:textSize="@dimen/size_15sp"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+</LinearLayout>

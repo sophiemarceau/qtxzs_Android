@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wecoo_gray1"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_View"
+        layout="@layout/titlebar_layout" />
+
+    <TextView
+        android:id="@+id/sendRemind_txt_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:maxLength="400"
+        android:text="提醒还未报备的好友赶紧来报备获得奖金吧！"
+        android:padding="@dimen/padding_15dp"
+        android:textColor="@color/wecoo_gray6"
+        android:textSize="@dimen/size_15sp" />
+
+    <EditText
+        android:id="@+id/sendRemind_edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_110dp"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:gravity="top"
+        android:maxLength="200"
+        android:hint="请输入投诉内容，我们将不断改进，请尽量详细描述您遇到的问题"
+        android:padding="@dimen/padding_15dp"
+        android:textColor="@color/wecoo_gray6"
+        android:textSize="@dimen/size_16sp" />
+
+    <Button
+        android:id="@+id/sendRemind_butn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_20dp"
+        android:background="@drawable/login_btn_onclick_bg"
+        android:text="@string/send"
+        android:textColor="@color/login_btn_color_bg" />
+</LinearLayout>

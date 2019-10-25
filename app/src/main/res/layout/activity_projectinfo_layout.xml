@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_View"
+        layout="@layout/titlebar_layout"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.wecoo.qutianxia.widget.DragTopLayout
+            android:id="@+id/projectInfo_dragLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--   top  View    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/projectInfo_viewTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_45dp"/>
+
+                <TextView
+                    android:id="@+id/projectInfo_txtTitle"
+                    style="@style/my_txt_style"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:text="@string/empty"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_16sp"/>
+
+                <TextView
+                    android:id="@+id/projectInfo_txtDesc"
+                    style="@style/text_white_size14"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:text="@string/empty"
+                    android:textColor="@color/wecoo_gray4"/>
+
+                <!--     成交单数    赏金金额     -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/linear_line_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_15dp">
+
+                    <LinearLayout
+                        android:id="@+id/projectInfo_ll_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_white_size14"
+                            android:text="@string/singularization"
+                            android:textColor="@color/wecoo_gray4"/>
+
+                        <TextView
+                            android:id="@+id/projectInfo_txtNum"
+                            style="@style/text_white_size14"
+                            android:gravity="top"
+                            android:text="@string/number"
+                            android:textColor="@color/wecoo_theme_color"
+                            android:textSize="@dimen/size_16sp"/>
+
+                        <TextView
+                            style="@style/text_white_size14"
+                            android:text="@string/dan"
+                            android:textColor="@color/wecoo_gray4"/>
+
+                        <ImageView
+                            android:layout_width="7dp"
+                            android:layout_height="13dp"
+                            android:layout_marginLeft="@dimen/margin_5dp"
+                            android:src="@mipmap/icon_arrow_right_red"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/projectInfo_ll_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/projectInfo_txtYongjin"
+                            style="@style/text_white_size14"
+                            android:text="@string/sign_Commission"
+                            android:textColor="@color/wecoo_gray4"/>
+
+                        <TextView
+                            android:id="@+id/projectInfo_txtPrice"
+                            style="@style/text_white_size14"
+                            android:gravity="top"
+                            android:text="0"
+                            android:textColor="@color/wecoo_theme_color"
+                            android:textSize="@dimen/size_16sp"/>
+
+                        <TextView
+                            style="@style/text_white_size14"
+                            android:text="@string/yuan"
+                            android:textColor="@color/wecoo_gray4"/>
+
+                        <ImageView
+                            android:layout_width="7dp"
+                            android:layout_height="13dp"
+                            android:layout_marginLeft="@dimen/margin_5dp"
+                            android:src="@mipmap/icon_arrow_right_red"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--     消息的广播    -->
+                <LinearLayout
+                    android:id="@+id/projectInfo_ll_broadcast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_3dp"
+                    android:background="@color/pink_red"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/padding_15dp"
+                    android:paddingRight="@dimen/padding_15dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:src="@mipmap/icon_broadcast"/>
+
+                    <!--    装消息的容器    -->
+                    <LinearLayout
+                        android:id="@+id/projectInfo_msg_layout"
+                        android:layout_width="0dip"
+                        android:layout_height="@dimen/view_45dp"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                        android:layout_marginRight="@dimen/margin_15dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/projectInfo_img_broadcast_close"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:src="@mipmap/icon_broadcast_close"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/projectInfo_view_fengexian"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_10dp"
+                    android:background="@color/wecoo_gray1"/>
+            </LinearLayout>
+
+            <!--   buttom  View    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/view_50dp">
+
+                <com.astuetz.PagerSlidingTabStrip
+                    android:id="@+id/projectInfo_tabStrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_45dp"
+                    android:background="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    app:pstsDividerColor="@android:color/transparent"
+                    app:pstsIndicatorColor="@color/wecoo_theme_color"
+                    app:pstsIndicatorHeight="2dp"
+                    app:pstsShouldExpand="true"
+                    app:pstsTabBackground="@color/white"
+                    app:pstsTabPaddingLeftRight="10dp"
+                    app:pstsTabTextColor="@color/slidingtabstrip_color"/>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/projectInfo_ViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+        </com.wecoo.qutianxia.widget.DragTopLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_50dp"
+            android:layout_gravity="bottom"
+            android:background="@color/wecoo_gray2"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/padding_1dp">
+
+            <Button
+                android:id="@+id/projectInfo_btn_Follow"
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:drawableTop="@mipmap/icon_collect_gray"
+                android:gravity="center"
+                android:padding="@dimen/padding_5dp"
+                android:text="@string/following"
+                android:textColor="@color/wecoo_gray5"
+                android:textSize="@dimen/size_12sp"/>
+
+            <Button
+                android:id="@+id/projectInfo_btn_reportCustom"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/wecoo_theme_color"
+                android:text="@string/Recommend_custom"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/projectInfo_ll_Buttom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@color/blank_alpha_50"
+                android:gravity="bottom|center_horizontal">
+
+                <ImageView
+                    android:layout_width="289dp"
+                    android:layout_height="257dp"
+                    android:layout_marginBottom="@dimen/view_30dp"
+                    android:src="@mipmap/project_cover_report"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_70dp"
+                android:gravity="bottom">
+
+                <View
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blank_alpha_50"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/project_cover_report_bg"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingTop="@dimen/padding_20dp">
+
+                    <TextView
+                        android:id="@+id/projectInfo_txt_reportCustom"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_50dp"
+                        android:background="@color/wecoo_theme_color"
+                        android:gravity="center"
+                        android:text="@string/reportcustom"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

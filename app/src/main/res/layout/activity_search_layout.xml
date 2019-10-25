@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_49dp"
+        android:background="@color/wecoo_theme_color"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/padding_5dp"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_circular_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="@dimen/padding_10dp"
+                android:layout_marginRight="@dimen/padding_5dp"
+                android:src="@mipmap/icon_search_bar_search" />
+
+            <EditText
+                android:id="@+id/search_edit_projectName"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:hint="请输入项目名称，不超过10字"
+                android:imeOptions="actionSearch"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/wecoo_gray6"
+                android:textColorHint="@color/wecoo_gray4"
+                android:textSize="@dimen/size_14sp" />
+
+            <ImageView
+                android:id="@+id/search_right_ivClose"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="@dimen/padding_10dp"
+                android:src="@mipmap/icon_search_bar_close"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/search_right_txCancel"
+            android:layout_width="@dimen/view_60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_15sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/search_content_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_45dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/search_txtCount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_40dp"
+                android:background="@drawable/linear_line_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_15dp"
+                android:paddingRight="@dimen/padding_15dp"
+                android:text="推荐项目"
+                android:textColor="@color/wecoo_gray6"
+                android:textSize="@dimen/size_14sp" />
+
+            <com.wecoo.qutianxia.view.refreshload.PtrWecooFrameLayout
+                android:id="@+id/search_PtrFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/search_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/wecoo_gray1"
+                    android:dividerHeight="10dp"
+                    android:background="@color/white"/>
+            </com.wecoo.qutianxia.view.refreshload.PtrWecooFrameLayout>
+
+            <com.wecoo.qutianxia.widget.LoadDataErrorWidget
+                android:id="@+id/search_LoadDataError"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <com.wecoo.qutianxia.view.FilterView
+            android:id="@+id/search_top_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>
